@@ -1,0 +1,52 @@
+.title {
+    text-align: center;
+    border-bottom: 2px solid;
+    font-family:sans-serif;
+    background-color: #f0edd5;
+}
+
+body{
+    background-color: #f0edd5;
+}
+
+#sign{
+    text-align: right;
+}
+
+.label{
+    font-family: sans-serif;
+}
+
+.signup{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    border-style: solid;
+    background-color: white;
+    padding: 20px;
+    width:fit-content;
+}
+.main {
+    margin: 10px 0 10px 0;
+    overflow: hidden;
+    border : 2px solid black;
+    padding : 20px ;
+    float: right;
+    width: 73%;
+    text-align: center;
+    background-color: #E5B152;
+    font-family:sans-serif;
+}
+#Sudan{
+    width: 70%;
+}
+
+.liste {
+    margin:10px 0 0 0;
+    width : 20%;
+    float: left;
+    padding: 20px;
+    background-color: #E5B152;
+    border: 2px solid black;
+    font-family:sans-serif;
+}
