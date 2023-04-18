@@ -22,7 +22,8 @@ input {
     width:200px;
 }
 
-.title_container{
+.title{
+    padding: 15px;
     font-family: Verdana, Geneva, sans-serif;
 
 }
