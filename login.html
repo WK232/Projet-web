@@ -2,15 +2,26 @@
 <html>
     <head>
         <title>Log in</title>
-        <link href="style.css" rel="stylesheet"> 
+        <link href="style_login.css" rel="stylesheet"> 
     </head>
     <body>
-        <h1 class="title">Log In</h1>
+        
         <div class="signup">
             <form>
-                <label for="em"><p class="label">E-Mail :</p></label><input type="text" name="Email" id="em" placeholder="E-Mail"><br><br>
-                <label for="pa"><p class="label">Password :</p></label><input type="text" name="Password" id="pa" placeholder="password"><br><br>
-                <button>login</button>
+                <h1 class="title_container">Welcome Back!</h1>
+                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                    <label for="em"><p class="label">E-Mail :&nbsp;</p></label>
+                    <input type="text" name="Email" id="em" placeholder="E-Mail" class="area">
+                </div>
+                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                    <label for="pa"><p class="label">Password :&nbsp;</p></label>
+                    <input type="text" name="Password" id="pa" placeholder="password" class="area">
+                </div>
+                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                    <input type="checkbox" name="terms">
+                    <label for="terms"><p class=label>&nbsp;&nbsp;Remember Me</p></label>
+                </div>
+                <button class="button">login</button>
             </form>
         </div>
     </body>
