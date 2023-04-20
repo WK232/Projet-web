@@ -2,7 +2,7 @@
 
 body{
     background-color: #f2f2f2;
-    background-image: url(back.jpg);
+    /*background-image: url(back.jpg);*/
     background-repeat : no-repeat ;
     background-position: center;
     background-size: cover;
@@ -24,7 +24,6 @@ body{
 
 .button{
     background-color: gray; /* Green */
-
     color: white;
     padding: 15px 32px;
     width:300px;
@@ -39,7 +38,7 @@ body{
 .button:hover {
     background-color: black; 
     color: white;
-  }
+}
 
 .title_container{
     font-family: Verdana, Geneva, sans-serif;
