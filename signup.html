@@ -15,47 +15,45 @@
             <h2 class="title_container">Register today</h2>
             <p class="title_container">to get the latest news</p>
             <br>
-            <form>
+            <form action="connect.php" method="post">
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
                     <label for="fn"><p class="label">First Name : &nbsp; &nbsp;</p></label>
-                    <input class="area" type="text" name="First Name" id="fn" placeholder="First Name">
+                    <input class="area" type="text" name="firstname" id="fn" placeholder="First Name">
                 </div>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
                     <label for="ln"><p class="label">Last Name : &nbsp; &nbsp;</p></label>
-                    <input class="area" type="text" name="Last Name" id="fn" placeholder="Last Name">
+                    <input class="area" type="text" name="lastname" id="fn" placeholder="Last Name">
                 </div>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
                     <label for="db"><p class="label">Date of Birth : &nbsp; &nbsp;</p></label>
-                    <input class="area" type="date" name="Date of birth" id="db">
+                    <input class="area" type="date" name="datebirth" id="db">
                 </div>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
                     <label for="em"><p class="label">E-mail : &nbsp; &nbsp;</p></label>
-                    <input class="area" type="email" name="E-mail" id="em" placeholder="E-mail">
+                    <input class="area" type="email" name="email" id="em" placeholder="E-mail">
                 </div>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
                     <label for="se"><p class="label">Sexe :&nbsp; &nbsp;</p></label>
-                    <input type="radio" name="Sexe" value="male" checked><p class="label">Male&nbsp;&nbsp; &nbsp;</p>
-                    <input type="radio" name="Sexe" value="female"><p class="label">Female &nbsp;&nbsp; &nbsp;</p>
-                </div>
-                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
-                    <label for="ph"><p class="label">Phone Number :&nbsp;&nbsp;</p></label>
-                    <input class="area" type="phone" name="Phone" placeholder="Phone Number">
+                    <input type="radio" name="gender" value="m" checked><p class="label">Male&nbsp;&nbsp; &nbsp;</p>
+                    <input type="radio" name="gender" value="f"><p class="label">Female &nbsp;&nbsp; &nbsp;</p>
                 </div>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
                     <label for="pa"><p class="label">Password :&nbsp;&nbsp;</p></label>
-                    <input class="area" type="text" name="Password" placeholder="Password" style="-webkit-text-security: square;">
+                    <input class="area" type="text" name="password" placeholder="Password" style="-webkit-text-security: square;">
                 </div>
+                <br>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
                     <label for="co_pa"><p class="label" >Re-type your Password :&nbsp;&nbsp;</p></label>
-                    <input class="area" type="text" name="co_Password" placeholder="Confirm Your Password" style="-webkit-text-security: square;">
+                    <input class="area" type="text" name="copassword" placeholder="Confirm Your Password" style="-webkit-text-security: square;">
                 </div>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
                     <input type="checkbox" name="terms">
                     <label for="terms"><p class=label>&nbsp;&nbsp;I agree with terms and conditions</p></label>
                 </div>
                 <br>
+                <button value="Register" type="submit" class="button">Register</button>
             </form>
-            <button value="Register" type="submit" class="button">Register</button>
+            
         </div>
     </div>
     <hr style="border-color: #87b22d;">
