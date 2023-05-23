@@ -39,3 +39,14 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
+const switchtheme = ()=>
+{
+  const rootElem=document.documentElement
+  let datatheme =rootElem.getAttribute('data-theme'),
+  newtheme=(datatheme==='light') ? 'dark' :  'light'
+  rootElem.setAttribute('data-theme',newtheme)
+}
+const element = document.getElementById('theme-switcher');
+if (element) {
+  element.addEventListener('click', switchtheme);
+}

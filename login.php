@@ -17,18 +17,13 @@
 <?php
     try
     {
-    // connexion à la base de données magasin
     $db = new PDO('mysql:host=localhost;dbname=test;charset=utf8','root',''); 
     }
     catch(Exception $e)
     {
-    // En cas d'erreur, on affiche un message et on quitte la page
     die('Erreur : '.$e->getMessage());
     }
-    // Si on passe à l’exécution des instructions suivantes c’est que tout s’est bien passé lors de la connexion à la base
-    // On récupère toutes les données contenues dans la table « Clients »
     $reponse = $db->query("SELECT * FROM registration");
-    // En utilisant une boucle, on affiche chaque entrée (ligne) lue dans le résultat retourné
     $i=0 ;
     while ($entree = $reponse->fetch())
     {
@@ -41,7 +36,7 @@
         }
 }
 if ($a==0) {echo ("introuvable");}
-$reponse->closeCursor(); // Termine le traitement de la requête
+$reponse->closeCursor(); 
 ?>
 	<hr style="border-color: #87b22d;">
 <footer class="footersite">
